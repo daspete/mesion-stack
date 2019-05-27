@@ -1,0 +1,9 @@
+#! /bin/bash
+
+pm2 flush
+pm2 delete all
+
+pm2 start --name="server" yarn -- dev:api
+pm2 start --name="client" yarn -- dev:client
+
+pm2 logs
