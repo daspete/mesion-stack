@@ -1,11 +1,12 @@
 import 'dotenv/config'
 
+
 let secure = process.env.SERVER_HTTPS == 'true'
 let apiUrl = 'http' + (secure ? 's' : '') + '://' + process.env.SERVER_HOST + ':' + process.env.SERVER_PORT
 
 export default {
     env: {
-        SOCKET_URL: apiUrl
+        SOCKET_URL: apiUrl,
     },
 
     server: {
@@ -48,6 +49,7 @@ export default {
 
     plugins: [
         '~plugins/axios',
+        '~plugins/components',
         { src: '~plugins/socketio', ssr: false }
     ],
 

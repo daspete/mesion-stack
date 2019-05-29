@@ -7,9 +7,11 @@
 </template>
 
 <script>
+const components = {}
+
 export default {
     middleware: 'authenticated',
-    
+
     async asyncData({ $axios }){
         let apiData = null
         
@@ -21,7 +23,7 @@ export default {
 
         return {
             apiData,
-            socketData: {}
+            socketData: {},
         }
     },
 

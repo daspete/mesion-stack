@@ -19,8 +19,12 @@ export default {
             credentials: {
                 email: '',
                 password: ''
-            }
+            },
         }
+    },
+
+    mounted(){
+        Cookie.remove('token')
     },
 
     methods: {
