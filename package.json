@@ -2,6 +2,10 @@
     "name": "mesion-stack",
     "description": "Mongo Express socketio nuxt stack",
     "author": "daspete <daspetemail@gmail.com> (github.com/daspete)",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/daspete/mesion-stack.git"
+    },
     "scripts": {
         "dev:api": "backpack dev",
         "dev:client": "nuxt --config-file config/client.js",
