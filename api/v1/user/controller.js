@@ -6,7 +6,6 @@ import GetUserByToken from '~utils/GetUserByToken'
 import HashPassword from '~utils/HashPassword'
 import CreateJWTToken from '~utils/CreateJWTToken'
 
-
 export const index = async (req, res, next) => {
     let users = await UserModel.find({})
     res.json(users)
@@ -39,7 +38,6 @@ export const login = async (req, res, next) => {
         }
     })(req, res, next)
 }
-
 
 export const me = async (req, res, next) => {
     let user = await GetUserByToken(req.headers.authorization)

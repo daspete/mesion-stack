@@ -1,9 +1,20 @@
 <template>
     <div class="login">
         <form v-on:submit.prevent="Login">
-            <input type="text" v-model="credentials.email">
-            <input type="password" v-model="credentials.password">
-            <button type="submit">Login</button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Login</h1>
+                        <input class="d-block w-100 mb-2 p-2" type="text" v-model="credentials.email" placeholder="E-Mail">
+                    </div>
+                    <div class="col-12">
+                        <input class="d-block w-100 mb-2 p-2" type="password" v-model="credentials.password" placeholder="Password">
+                    </div>
+                    <div class="col-12 text-right">
+                        <button type="submit">Login</button>
+                    </div>
+                </div>
+            </div>
         </form>
     </div>
 </template>

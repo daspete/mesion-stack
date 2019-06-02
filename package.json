@@ -17,6 +17,7 @@
         "backpack-core": "^0.8.3",
         "bcrypt": "^3.0.6",
         "body-parser": "^1.19.0",
+        "bootstrap": "^4.3.1",
         "commander": "^2.20.0",
         "compression": "^1.7.4",
         "cookieparser": "^0.1.0",

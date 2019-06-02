@@ -59,4 +59,8 @@ export default {
         '@nuxtjs/axios',
     ],
 
+    serverMiddleware: [
+        '~middleware/logger'
+    ]
+
 }
